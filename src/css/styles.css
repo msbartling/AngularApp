@@ -6,3 +6,21 @@ body.main{
 	background-color: #d9b3ff;
 	color: #484848;
 }
+
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+	background-color: #339966;
+}
+
+i#background-white {
+	background-color: #FFFFFF;
+}
+
+div#background-purple {
+	background-color: #d9b3ff;
+}

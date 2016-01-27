@@ -1,16 +1,17 @@
 <div data-ng-controller='Ballslot as vm' class='ball'>
-<i class="fa fa-lock"></i>
-<i class="fa fa-unlock-alt"></i><br>
-<div>
+
+    <div id='background-purple' ng-click='vm.setlock()'>
+       <i class="fa fa-lock" ng-hide="vm.locked"> </i>
+       <i class="fa fa-unlock-alt" ng-show="vm.locked"></i> 	
+    </div>
+<div> 
 <span class="fa-stack fa-lg">
-    <i class="fa fa-star-o fa-stack-2x"></i>
-    <i class="fa fa-stack-1x">1</i>
+    <i class="fa fa-circle-thin fa-stack-2x"></i>
+    <i class="fa fa-stack-1x" >2</i>
 </span>
 </div>
  <div>
-    <input type="number" id="num" min='1' max='69'>
+    <input type="number" id="num" min='1' max='69' style="width: 40px"></input>
  </div>
- <div>
- 	<input type="radio" id="fixed"> 
- </div>
+
 </div>

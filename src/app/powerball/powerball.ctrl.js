@@ -10,4 +10,4 @@
 
         vm.message = 'This is the Powerball Ticket!';
     };
-})();
+});

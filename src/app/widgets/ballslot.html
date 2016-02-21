@@ -1,13 +1,13 @@
 <div data-ng-controller='Ballslot as vm' class='ball'>
 
     <div id='background-purple' ng-click='vm.setlock()'>
-       <i class="fa fa-lock" ng-hide="vm.locked"> </i>
-       <i class="fa fa-unlock-alt" ng-show="vm.locked"></i> 	
+       <i class="fa fa-lock" ng-show="vm.locked"> </i>
+       <i class="fa fa-unlock-alt" ng-hide="vm.locked"></i> 	
     </div>
 <div> 
 <span class="fa-stack fa-lg">
     <i class="fa fa-circle-thin fa-stack-2x"></i>
-    <i class="fa fa-stack-1x" >2</i>
+    <i class="fa fa-stack-1x" data-ng-bind="vm.svc.numsPicked[vm.ind]" data-ng-init="vm.setInd()"></i>
 </span>
 </div>
  <div>

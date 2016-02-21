@@ -7,6 +7,7 @@
                 'app.lotto',
                 'app.powerball',
 
-                'widget.ballslot'
+                'widget.ballslot',
+                'svc.manager'
         	]);
 })();

@@ -9,7 +9,7 @@
 
     	var directive = {
     		restrict: 'E',
-            scope: true,
+            //scope: false,
     		templateUrl: 'app/widgets/ballslot.html'
     	}
     	return directive;

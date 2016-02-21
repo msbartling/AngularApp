@@ -1,12 +1,18 @@
 
+<div ng-controller="Lotto as vm">
 <div class="container-fluid">
     <table class='center'>
-    	<td><data-ball-slot></data-ball-slot></td>
-    	<td><data-ball-slot></data-ball-slot></td>
-    	<td><data-ball-slot></data-ball-slot></td>
-    	<td><data-ball-slot></data-ball-slot></td>
-    	<td><data-ball-slot></data-ball-slot></td>
-    	<td><data-ball-slot></data-ball-slot></td>
+    	<td data-ng-repeat="num in [0, 1, 2, 3, 4, 5]" ><data-ball-slot  ></data-ball-slot></td>
     </table>
 
+    <table class='center'>
+        <td>
+          <span data-ng-repeat="count in [0, 1, 2, 3, 4, 5, 6, 7]">
+<span data-ng-repeat="num in vm.numbers[count]" class="badge" data-ng-click="vm.select(num)">{{num}}</span><br></span>
+           
+        </td>
+    </table>
 </div>
+</div>
+
+           <!--<span data-ng-repeat="num in vm.numbers track by $index" class="badge">{{num}}</span>-->
